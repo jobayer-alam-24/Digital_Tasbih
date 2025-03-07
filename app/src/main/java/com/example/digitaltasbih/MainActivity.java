@@ -13,10 +13,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView display = findViewById(R.id.display);
-    Button add = findViewById(R.id.add);
-    Button sub = findViewById(R.id.sub);
-    Button remove = findViewById(R.id.clear);
+    TextView display;
+    Button add, sub, remove;
     int count = 0;
 
     @Override
@@ -24,6 +22,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+
+        //Initializes here
+        display = findViewById(R.id.display);
+        add = findViewById(R.id.add);
+        sub = findViewById(R.id.sub);
+        remove = findViewById(R.id.clear);
 
         add.setOnClickListener(new View.OnClickListener() {
             @Override
