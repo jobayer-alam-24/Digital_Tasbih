@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 count++;
-                display.setText(count);
+                display.setText(String.valueOf(count));
             }
         });
 
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 if(count > 0)
                 {
                     count--;
-                    display.setText(count);
+                    display.setText(String.valueOf(count));
                 }
             }
         });
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 count = 0;
-                display.setText(count);
+                display.setText(String.valueOf(count));
             }
         });
 
